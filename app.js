@@ -13,8 +13,8 @@ const nountInput = document.getElementById('noun-input');
 const adjInput = document.getElementById('adj-input');
 const verbInput = document.getElementById('verb-input');
 const pNounInput = document.getElementById('p-noun-input');
-
-
+const lyrics = document.getElementById('lyrics');
+const inputSection = document.getElementById('input-section');
 
 //console.log(firstNoun, firstVerb, firstAdj, firstPnoun);
 
@@ -28,5 +28,7 @@ buttonPress.addEventListener('click', () => {
     firstVerb.style.color = 'blue';
     firstAdj.style.color = 'purple';
     firstPnoun.style.color = 'goldenrod';
-      
+
+    lyrics.style.display = "block";
+    inputSection.style.display = "none";
 });

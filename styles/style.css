@@ -21,6 +21,13 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
+.lyrics {
+    display: none;
+}
+
+.input-section {
+    display: block;
+}
 
 main {
     display: flex;
