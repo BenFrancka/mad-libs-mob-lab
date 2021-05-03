@@ -15,6 +15,8 @@ const verbInput = document.getElementById('verb-input');
 const pNounInput = document.getElementById('p-noun-input');
 const lyrics = document.getElementById('lyrics');
 const inputSection = document.getElementById('input-section');
+const body = document.getElementById('body');
+const resetPress = document.getElementById('reset-button');
 
 //console.log(firstNoun, firstVerb, firstAdj, firstPnoun);
 
@@ -31,4 +33,11 @@ buttonPress.addEventListener('click', () => {
 
     lyrics.style.display = "block";
     inputSection.style.display = "none";
+    body.style.backgroundImage = 'https://ih1.redbubble.net/image.783682307.4704/st,small,507x507-pad,600x600,f8f8f8.u2.jpg';
+});
+
+resetPress.addEventListener('click', () => {
+    lyrics.style.display = "none";
+    inputSection.style.display = "block";
+
 });
